@@ -12,18 +12,18 @@
   --accent:#e8b84b;--accent2:#4b8fe8;--rojo:#e84b4b;--verde:#4be87a;
   --texto:#f0f0f0;--texto2:#999;--texto3:#555;
 }
-html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--texto);font-family:'Inter',sans-serif;}
+html , body { altura : 100 % ; desbordamiento : oculto ; fondo : var ( --bg ) ; color : var ( --texto ) ; fuente : 'Inter' , sans-serif ; }
 
-/* ===== LAYOUT ===== */
-#app{display:flex;flex-direction:column;height:100vh;}
-#contenido{flex:1;overflow:hidden;position:relative;}
-.seccion{position:absolute;inset:0;overflow-y:auto;display:none;flex-direction:column;}
-.seccion.activa{display:flex;}
+/* ===== DISEÑO ===== */
+# app { display : flex ; flex-direction : column ; height : 100 vh ; }
+# contenido { flex : 1 ; overflow : hidden ; position : relative ; }
+. seccion { position : absolute ; inset : 0 ; overflow-y : auto ; display : none ; flex-direction : column ; }
+. sección . activa { pantalla : flex ; }
 
-/* ===== NAV INFERIOR ===== */
-#nav{display:flex;background:#111;border-top:1px solid var(--border);flex-shrink:0;}
-.nav-btn{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px 4px 10px;cursor:pointer;transition:color .2s;color:var(--texto3);border:none;background:none;}
-.nav-btn.activo{color:var(--accent);}
+/* ===== NAVEGACIÓN INFERIOR ===== */
+#nav { display : flex ; background : #111; border -top : 1px solid var ( -- border ) ; flex-shrink : 0 ; }  
+.nav - btn { flex : 1 ; display : flex ; flex-direction : column ; align-items : center ; justify - content : center ; padding : 8px 4px  10px ; cursor : pointer ; transition : color .2s ; color : var ( -- texto3 ) ; border : none ; background : none ; }  
+. navegación-btn . activo { color : var ( -accent ) ; }
 .nav-btn span{font-size:20px;line-height:1;}
 .nav-btn p{font-size:9px;margin-top:3px;letter-spacing:.5px;text-transform:uppercase;}
 
