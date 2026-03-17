@@ -32,34 +32,9 @@ html , body { altura : 100 % ; desbordamiento : oculto ; fondo : var ( --bg ) ; 
 .sec-header h2{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:2px;color:var(--accent);}
 .sec-header p{font-size:12px;color:var(--texto2);margin-top:2px;}
 
-/* ===========================
-   SECCIÓN 1: IA CRIS
-=========================== */
-#sec-ia{background:var(--bg);}
-.ia-header{padding:16px;background:linear-gradient(135deg,#1a1200,#0d0d0d);border-bottom:1px solid var(--border);flex-shrink:0;}
-.ia-titulo{display:flex;align-items:center;gap:10px;}
-.ia-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#c8860a);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
-.ia-nombre{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;color:var(--accent);}
-.ia-estado{font-size:11px;color:var(--texto2);}
-.ia-apikey-box{margin-top:10px;display:flex;gap:6px;}
-.ia-apikey-box input{flex:1;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:8px 10px;font-size:12px;color:var(--texto);outline:none;}
-.ia-apikey-box button{background:var(--accent);color:#000;border:none;border-radius:8px;padding:8px 12px;font-size:12px;font-weight:600;cursor:pointer;}
-
-#chat-mensajes{flex:1;padding:12px;display:flex;flex-direction:column;gap:10px;overflow-y:auto;}
-.msg{max-width:85%;padding:10px 14px;border-radius:16px;font-size:14px;line-height:1.5;animation:fadeMsg .25s ease;}
-@keyframes fadeMsg{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
-.msg-user{background:var(--accent);color:#000;align-self:flex-end;border-bottom-right-radius:4px;}
-.msg-ia{background:var(--surface);color:var(--texto);align-self:flex-start;border-bottom-left-radius:4px;border:1px solid var(--border);}
-.msg-ia.pensando{opacity:.6;}
-.msg-ia b{color:var(--accent);}
-
-.ia-input-bar{padding:10px;background:#111;border-top:1px solid var(--border);display:flex;gap:8px;flex-shrink:0;}
-.ia-input-bar textarea{flex:1;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:10px 12px;font-size:14px;color:var(--texto);resize:none;outline:none;font-family:'Inter',sans-serif;max-height:100px;line-height:1.4;}
-.ia-input-bar button{width:42px;height:42px;background:var(--accent);border:none;border-radius:12px;font-size:18px;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
-.ia-input-bar button:active{transform:scale(.93);}
 
 /* ===========================
-   SECCIÓN 2: TV
+   SECCIÓN 1: TV
 =========================== */
 #sec-tv{background:#000;}
 .tv-header{padding:14px 16px 10px;flex-shrink:0;}
@@ -83,7 +58,7 @@ html , body { altura : 100 % ; desbordamiento : oculto ; fondo : var ( --bg ) ; 
 @keyframes pulso{0%,100%{opacity:1}50%{opacity:.3}}
 
 /* ===========================
-   SECCIÓN 3: RADIO
+   SECCIÓN 2: RADIO
 =========================== */
 #sec-radio{background:var(--bg);}
 .radio-player-mini{margin:0 16px 12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;display:none;}
@@ -110,7 +85,7 @@ html , body { altura : 100 % ; desbordamiento : oculto ; fondo : var ( --bg ) ; 
 @keyframes spin{to{transform:rotate(360deg)}}
 
 /* ===========================
-   SECCIÓN 4: EDITOR
+   SECCIÓN 3: EDITOR
 =========================== */
 #sec-editor{background:var(--bg);}
 .editor-toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:10px 12px;background:#111;border-bottom:1px solid var(--border);flex-shrink:0;}
@@ -127,7 +102,7 @@ html , body { altura : 100 % ; desbordamiento : oculto ; fondo : var ( --bg ) ; 
 .btn-export:active{transform:scale(.95);}
 
 /* ===========================
-   SECCIÓN 5: CONTRATOS
+   SECCIÓN 4: CONTRATOS
 =========================== */
 #sec-contratos{background:var(--bg);}
 .contratos-lista{padding:0 16px;display:flex;flex-direction:column;gap:8px;}
@@ -155,24 +130,7 @@ html , body { altura : 100 % ; desbordamiento : oculto ; fondo : var ( --bg ) ; 
 .resultado-header{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--border);background:#111;flex-shrink:0;}
 #texto-contrato{flex:1;padding:20px;overflow-y:auto;background:white;color:#111;font-size:13px;line-height:1.9;white-space:pre-wrap;font-family:'Times New Roman',serif;}
 .resultado-footer{padding:10px 16px;background:#111;border-top:1px solid var(--border);display:flex;gap:8px;flex-shrink:0;}
-.btn-accion{flex:1;border:none;border-radius:8px;padding:12px;font-size:13px;font-weight:700;cursor:pointer;}
-.btn-copiar{background:var(--surface2);color:var(--texto);}
-.btn-compartir{background:var(--accent);color:#000;}
 
-/* ===========================
-   SECCIÓN 6: NOTICIAS
-=========================== */
-#sec-noticias{background:var(--bg);}
-.noticias-fuentes{display:flex;gap:8px;padding:0 16px 12px;overflow-x:auto;flex-shrink:0;}
-.fuente-btn{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:6px 14px;font-size:12px;color:var(--texto2);cursor:pointer;white-space:nowrap;flex-shrink:0;}
-.fuente-btn.activa{background:var(--accent);color:#000;border-color:var(--accent);font-weight:600;}
-#noticias-lista{padding:0 16px 16px;display:flex;flex-direction:column;gap:10px;}
-.noticia-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px;cursor:pointer;transition:border-color .2s;}
-.noticia-card:active{background:var(--surface2);}
-.noticia-fuente{font-size:10px;letter-spacing:2px;color:var(--accent);text-transform:uppercase;font-weight:600;margin-bottom:4px;}
-.noticia-titulo{font-size:14px;font-weight:600;line-height:1.4;color:var(--texto);}
-.noticia-fecha{font-size:11px;color:var(--texto3);margin-top:6px;}
-.loading-text{text-align:center;color:var(--texto2);font-size:13px;padding:30px;}
 
 audio{display:none;}
 </style>
@@ -181,31 +139,7 @@ audio{display:none;}
 <div id="app">
   <div id="contenido">
 
-    <!-- ===== IA CRIS ===== -->
-    <div id="sec-ia" class="seccion activa">
-      <div class="ia-header">
-        <div class="ia-titulo">
-          <div class="ia-avatar">🤖</div>
-          <div>
-            <div class="ia-nombre">CRIS IA</div>
-            <div class="ia-estado" id="ia-estado">Ingresá tu API key para activar</div>
-          </div>
-        </div>
-        <div class="ia-apikey-box">
-          <input type="password" id="api-key-input" placeholder="sk-ant-api03-..." />
-          <button onclick="guardarApiKey()">OK</button>
-        </div>
-      </div>
-      <div id="chat-mensajes">
-        <div class="msg msg-ia">
-          Hola, soy <b>Cris</b>, tu asistente de IA. Podés preguntarme lo que quieras — temas legales, redactar textos, consultas generales... ¿En qué te ayudo?
-        </div>
-      </div>
-      <div class="ia-input-bar">
-        <textarea id="ia-input" placeholder="Escribí tu pregunta..." rows="1" onkeydown="iaEnter(event)"></textarea>
-        <button onclick="enviarMensaje()">➤</button>
-      </div>
-    </div>
+    
 
     <!-- ===== TV ===== -->
     <div id="sec-tv" class="seccion">
@@ -356,22 +290,7 @@ audio{display:none;}
     </div>
 
     <!-- ===== NOTICIAS ===== -->
-    <div id="sec-noticias" class="seccion">
-      <div class="sec-header">
-        <h2>📰 NOTICIAS</h2>
-        <p>Diarios argentinos · requiere WiFi</p>
-      </div>
-      <div class="noticias-fuentes">
-        <button class="fuente-btn activa" onclick="cargarNoticias('infobae')">Infobae</button>
-        <button class="fuente-btn" onclick="cargarNoticias('lanacion')">La Nación</button>
-        <button class="fuente-btn" onclick="cargarNoticias('clarin')">Clarín</button>
-        <button class="fuente-btn" onclick="cargarNoticias('pagina12')">Página 12</button>
-        <button class="fuente-btn" onclick="cargarNoticias('ambito')">Ámbito</button>
-      </div>
-      <div id="noticias-lista">
-        <div class="loading-text">Seleccioná un diario para ver noticias</div>
-      </div>
-    </div>
+    
 
   </div><!-- fin contenido -->
 
